@@ -1,0 +1,16 @@
+@use "./basic/font.scss" as *;
+@forward "./basic/resets";
+@use "./basic/common-style" as *;
+
+// Block of code
+@use "./imports/b-code/b-btn" as *;
+
+//Components
+@use "./components/header" as *;
+@use "./components/hero" as *;
+@use "./components/featured" as *;
+@use "./components/homes" as *;
+@use "./components/properties" as *;
+@use "./components/info" as *;
+@use "./components/companies" as *;
+@use "./components/footer" as *;

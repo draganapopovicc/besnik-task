@@ -1,0 +1,93 @@
+@use "../shared" as *;
+
+.companies {
+   padding: 80px 0;
+   text-align: center;
+
+   @media (min-width: $media-tablet-break) {
+      text-align: left;
+   }
+
+   @media (min-width: $media-desktop-break) {
+      padding: 120px 0;
+   }
+
+   &__info {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      gap: 30px;
+
+      @media (min-width: $media-tablet-break) {
+         flex-direction: row;
+      }
+
+      img {
+         width: 107px;
+      }
+
+      p {
+         font-weight: 500;
+         line-height: 20px;
+         margin-top: 24px;
+         color: $gray-text-color;
+      }
+   }
+
+   &__review {
+      text-align: center;
+
+      @media (min-width: $media-tablet-break) {
+         text-align: end;
+      }
+
+      img {
+         width: 115px;
+      }
+
+      p {
+         margin-top: 15px;
+      }
+   }
+
+   &__bottom {
+      margin: 0 auto;
+      margin-top: 45px;
+      display: flex;
+      align-items: center;
+      gap: 20px 50px;
+      justify-content: center;
+      flex-wrap: wrap;
+
+      @media (min-width: $media-tablet-break) {
+         margin-top: 95px;
+      }
+
+      @media (min-width: $media-desktop-break) {
+         max-width: 1089px;
+         justify-content: space-between;
+         flex-wrap: nowrap;
+      }
+
+      img {
+         width: 120px;
+         transition: transform 0.3s;
+
+         &:hover,
+         &:active {
+            transform: scale(1.1);
+         }
+
+         @media (min-width: $media-tablet-break) {
+            width: unset;
+         }
+      }
+   }
+
+   &__amazon {
+      @media (min-width: $media-desktop-break) {
+         margin: 0 51px;
+      }
+   }
+}

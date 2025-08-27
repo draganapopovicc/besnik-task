@@ -1,0 +1,61 @@
+@use "../shared" as *;
+
+.info {
+   padding: 50px 0;
+
+   @media (min-width: $media-tablet-break) {
+      padding: 73px 0 120px;
+   }
+
+   .wrapper {
+      max-width: 787px;
+      text-align: center;
+   }
+
+   .b-text {
+      &__title {
+         @include title($lineHeight: 45px);
+         @include border-top(50%, -9px);
+         display: inline-block;
+      }
+
+      &__desc {
+         @include description;
+         max-width: 485px;
+         margin: 0 auto;
+      }
+   }
+
+   &__guides {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      margin: 69px 0 11px;
+
+      @media (min-width: $media-tablet-break) {
+         flex-direction: row;
+         gap: 81px;
+      }
+
+      .guide {
+         width: 200px;
+         text-align: center;
+
+         &__img {
+            width: 49px;
+         }
+
+         &__title {
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 22px;
+            margin: 25px 0 10px;
+         }
+      }
+   }
+
+   .b-btn {
+      padding: 18.5px 25px;
+   }
+}

@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover a place you'll love to live.">
+  <title>Besnik</title>
+  <script type="module" crossorigin src="/besnik-task/assets/index-CBmx2uRp.js"></script>
+  <link rel="stylesheet" crossorigin href="/besnik-task/assets/index-WpktPh3a.css">
+</head>
+
+<body>
+
+  <div class="header-hero-wrap">
+    <!-- HEADER -->
+    <header class="header">
+      <div class="wrapper">
+        <a href="#" class="header__logo" aria-label="logo">
+          <img loading="lazy" width="40" height="20" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAANYAAAAwCAYAAABt/oSxAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAuRSURBVHgB7V3NchvHEe4ZKBLti6lbbl6mIhH0RVRSORPyCwg85BpCLxBSfgATfIGQfAGZvCTlykHMEwR6gJSYSpUFJlUhdEpuog8p0ylh2t29C4A/mJn9myVI7FcFEcLs7uwOpqd7vvmmoaBGjVyIFkE/6ALoDQBcBFBn9PcIDOwA9AdQCM3IXlb02tVAgW52ITfUBzD4Pb0ZAAypYf91DDXmANTxNfyV3kRTCgdkXM8KGYBunlquDcm1ezDjuEevbcgNpEYYvW/Qq8kf9UApGrnwL7dldKmRERq6YOv4/LmCb6gfPIM5hoayoaBF1rVHVz6lkecbt1uvcUux5ixVuApzjvIN6zI6sYEtb0GNu4TIXawWYc4R2rASqF3yXgVCzhqzBSYqarhQkWEJuhQWtqDG7Qeim6Tiefac456zFJnt84HcvsJ0rl/TpNbAEtS43UCi1GUubSs3+zDn8BnWi1TUJgpB0aLG3qZX5Dgyir3W7NOlNVyg7888Xgeldy9930ghosaXAP88gjlHSaEg0+r9A8A+e6NDcNe4ATXuAMh4+Ps2+qmsLfFffPcQhtQPang8Vh6YfgdU83NHqNCCGncI39WigCkIQ15wDG5HJHKYGjXuMAKxgueeUWyhNqwadxrlh4KCwZnIm4KBPd4Cr+5HoNVn5CIfxrrF4XsaK87CkiNc988igEasLtAXJu+GWVRzFt8Dv69C0nWxLfheRu2Ag1q7eXMIZFghwGrqhU0KM1uX5284+atHDjjRLGo4oMn0IRSGre4r0ON/LtyHrPkMiEEjJg3/7jT6xuM2kQC7U8sUkUKm353czycbdO329fu51A4D+qeXSXGuV+g5sZhSRqk9MO9mg3LXy7vEVrat5ThcDzEABTIs3xwq40jOX7YsMNN6mUp5Dnc4NgRW7xuTkwJODArUVqa6L92HYm9CLzIC6e+J0WN/ikhVLzqWKz6XpYp4SaMlBuS/nwhiWVmHzqV26O94z2Dvr3ySpRTXmAnIMtCWtZ1kITuMVw80x1qwizBRZXgQ7tgs5MW9eM9PLlCIpF9nl1Tx1ogHvDWiW6DuEqHaslVD5WZVu3MnK4tV+Ha4SbaCVYe5asdapng7SdrrSMfuQDnI1rE0vqabDaPSVhwSZkUpxt2dH1mZeCv7mql4q3Bz8fINKw7b7A9kaN6T6joUG5ffsbuplPaNZieYUTGMegs3BZaVzQP83uoFBK2+NHDYxsbAYZsV6SbRcccOtdVk27tHDCFwyDTM4bFKQ3T3vZbHWwEP7mEZWzd5oXEVjIs2N2RMDZpU88Y2Zl4c4QoLenHEanmQqmPjPo38R/GaGdP7Ce0ch6GORlV0z3R9YxuxHsXUtbVadUahHNVtqF5Nr/OzuH4G38OndO5Hntet0rFPpG2ukQElTZi5TTm0NjxvZZq/ESteFLad5yli/WwKdCNsaoq68XlCzMwe4rQB08HfH2KwudUIHlaQ91G5yrnwAt1tgxhVyq3a7K3Q1bH5Wnr9upRGOndPOgYsH9P61q69Eu540cuJQVysX0WuR6Ev5SkNEIPphXK9Y3kZmLCQI5GyFuLBdXU/xoadzBGuXg1hH5DCXdfzK1iz30U/aUMPtDzT7BmWr/9w22H49cWw61ijToDne1M78TQY8jYuGnmqUV3FCdW3HFErbk4vZ6/1oEN17U25voPRlM48gMyQcw5Szy+n100DCq0PwQ+HtPbraUt+/iY/h8Vz8w5fNoy7lpOkGTmjnSxRU0GE2+iI8Abw47N4UTOlUXEo5dznw4xiStGn+bHrLEf1HDLjRrecDwB40TX1AHXgPkA/gbsGd5IbqDLBTTjD4nBDN96CWn5L7jndVpHG/ZazHNVrSA3qgK6drHkSnsg5tyU5DlPJji30DTMji7glQQgvJ2GxU6WHDr81nye4SKOnXtn1HusKw2K8gUx1u9aLRuHQ1Y89u6Z5YiwDxW0wMDOwFmFRdcUsgUNAx5ySQ0BTTQg4QoU5L4iJ8hkXoiM8wbPMI47yqjyia58Mh/5zZKCAU1DNGTcydZO0fkXgZR5mAZ2MdOU5Dt3khdJtGBrflxPFtDsdixT+OXVmbFzL78GcWNa6XHOYAJmBGnSvw6sfEhWOxCqmoZLHekR6L+eQR5UlgDr1QDA0eKlkeVMW8BX3F58ihVMFnAygYrgNa2i+T+El4vIRvawkZbVrHYrKooOpk3C3USa6wUyIIA9Q7Us21ywYiW010Je+MspjflgbWcmQHQZq/B8PduyDeFiE2Jrfle0KVumMg+p2QrxZJ8sZ+VeMOG+DqBPSkS7XK47vNVaV0yIusVWlbF+pkRoVUuvTEGiOxYllHIxcLqo7AIb6g7WMc3dAKernZE7Gif7rdNuVQaKfx224IYQjL7QjW9PM5PbmUNdVTCNenAexDG8Tgca3iWSqRhXQ6hXA0o0sK4QzrKFLFmOhumcS/YF4LzYw1hcWyvLKYXDjdZ1Mpyqoh6Duv4LQmuopqDLF9FVE1z/C8pk/NwbpDx3nTnw2MTJiADHLNQSRzDFr5MUBMa9b0v5xTsMlEWTboHja8W0LKkZAreBwMf7NrAwQtbZV2Jn8oFmZyLsSn2j/MJEN4Rd0z4ZV7BupdviiHHMjbNUtB8ZM67vepU9NtAP6k99ZUgIoch+vwCz9CuC0soE7oGE1soc7Ct7bC5lpq349Ih2+ixXtbGgov3bYBRejqNSTghr3O4xf5sgs8psPYP7xlWMTJ0cJ5OW2uxBuN/4lhDMs7aXGB1NOGtg5cp6X8cR/1lN68ZyMqXbZx2YzrghqlIg/0+uLQ0BjixjYWL8G+BOvtRboP9w3H6Uy/EBzLCEm1uzlFnmS+dgDF3TjxujTzFDmCGpUiN8iYOMrxwEKlP5DfiKDjWplCdS9f6d5hTEsJYLIyFpuzdTE3sglXcLNW8OoDXXVRMycg0O8hWM3kcHerCCRoeQ3lr2vkg0rSVfm2xqOrr1CxrFmxHT1gl8lXxScOLOouFY7PHamFHC3Djj543uVjb8RufHjjmNwjokMWAo+OBecY407XkvyY4De8IoihZ52yHuM2ov1dlZ0QC0vUud8mZ7Vo7mZvreWZI59491CYBTH6u3L4lrsAfy/599omGSpBew6KngPM4tUg4mitvxsotm7UiZ9YGXJf5nt0/LJhOgDwH/Za9livoTI8GRxKghPMhmW46fNwc6NnGIUQt8DsbE02fBcrFpbOj4uH01SNzPMomSTjfO5r8qeIxHH8hc9zhwbAXjuQenW+FnG4lre5r8AIrDltNGybwsT5QbXx8/GiWN05B9csmzYrBi8HSYVXHN4aiv34Mgg7/LtlwBl/6xqj+n3fRrcNi3fAxv+78lr7YWk3yvO3c7x74lfHmTOt6hhnns7qJLMUO0JBTN6MzKKC+8niOJ5ms3zPFp114sX0geoq/cD3sFFPPZ5+qSlNXKAvJb5z449oY4IwclrcVSRg91PgSo3Ou6DOdlKdyx1eoPrEAyf2uc/jUZYLR8n10mdA6RqtML0ssrRo9dw36GKSbzWSgSBEN6wOFMTbzZLbVQjSBquFxACemhXcBgMqLyXwWUWFBdzsDz9FN252dVDyS8ZqCkCZmkSZmYH8Iel/J2pfyBasOx6PDdQr0H12Mk+uNTID140/vmhZ+f5RiivVd4cSzq/Oo7V30wmvOuVMxgQmYFsXM1O8hM2EeRB7Dljhg+Z4bMdd7I+TrApAk7JLJuPnh3Vifpl9b/V+2sKd/4nd2E5IOvnZQM9ZZjxHMt1ZF3ra+sRiuh3hC8h0zX9UAXzeA/iP3nFrHnA96uexASCicjpRpc6vhg4nkkiGUm9LL/yeFzsHllkm6SN5t+pkgxHXOe0HB1UpyI6Xeo+P8o2nxKDjqaX8YJzFuNktvmPqw7N5uB6m/A5VSrBR+nBs9zDtHNc+AU9/33XvJkMpf8GyrnWGD8Bwc0Lo1+Nx3wAAAAASUVORK5CYII=" alt="Logo">
+        </a>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Fratures</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Service</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Listed</a>
+            </li>
+            <li class="nav__item">
+              <a href="#" class="nav__link">Contact</a>
+            </li>
+          </ul>
+
+          <div class="header__buttons">
+            <a href="#" class="b-btn b-btn--header b-btn--transparent" aria-label="login">Sign up </a>
+            <a href="#" class="b-btn b-btn--header" aria-label="register">Register</a>
+          </div>
+        </nav>
+
+        <div class="header__buttons">
+          <a href="#" class="b-btn b-btn--header b-btn--transparent" aria-label="login">Sign up </a>
+          <a href="#" class="b-btn b-btn--header" aria-label="register">Register</a>
+        </div>
+
+        <button aria-label="menu" class="header__menu">
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="wrapper">
+        <div class="b-text">
+          <span class="b-text__subtitle">Welcome to Besnik Agency</span>
+          <h1 class="b-text__title">Discover a place you'll love to live.</h1>
+          <p class="b-text__desc">Get the best real estate deals first, before they hit the mass market! hot foreclosure
+            deals with one simple search</p>
+          <a href="#" class="b-btn b-btn--bigger" aria-label="more">More About Us</a>
+        </div>
+
+        <figure>
+          <img width="500" height="600" src="/besnik-task/assets/house-illustration-CJdC7csL.png" alt="house">
+        </figure>
+      </div>
+    </section>
+  </div>
+
+  <!-- COMPANIES -->
+  <div class="companies">
+    <div class="wrapper">
+      <div class="companies__top">
+        <div class="companies__info">
+          <div class="companies__besnik">
+            <img loading="lazy" width="40" height="20" src="data:image/png;base64,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" alt="Logo">
+            <p>More than 45,000+ companies trust besnik</p>
+          </div>
+          <div class="companies__review">
+            <img loading="lazy" width="40" height="20" src="data:image/svg+xml,%3csvg%20width='116'%20height='19'%20viewBox='0%200%20116%2019'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M20.2706%207.15765C20.2007%206.94804%2020.0146%206.79529%2019.7906%206.76364L13.4975%205.87345L10.6831%200.322507C10.5829%200.124902%2010.3761%20-0.000183105%2010.1498%20-0.000183105C9.9234%20-0.000183105%209.71667%200.124902%209.61648%200.322507L6.80193%205.87345L0.508953%206.76364C0.28498%206.79529%200.0988316%206.94805%200.0288921%207.15761C-0.0410871%207.36722%200.0172752%207.59728%200.179397%207.75108L4.73292%2012.0719L3.65814%2018.1731C3.61984%2018.3903%203.71158%2018.6097%203.89472%2018.7393C3.99832%2018.8125%204.12103%2018.8498%204.24434%2018.8498C4.33902%2018.8498%204.43401%2018.8279%204.521%2018.7833L10.1497%2015.9027L15.7783%2018.7833C15.9787%2018.8858%2016.2214%2018.8688%2016.4046%2018.7392C16.5877%2018.6097%2016.6795%2018.3902%2016.6412%2018.173L15.5661%2012.0719L20.1201%207.75104C20.2822%207.59728%2020.3406%207.36722%2020.2706%207.15765Z'%20fill='%23FFCA56'/%3e%3cpath%20d='M44.1956%207.15765C44.1257%206.94804%2043.9396%206.79529%2043.7156%206.76364L37.4225%205.87345L34.6081%200.322507C34.508%200.124902%2034.3012%20-0.000183105%2034.0748%20-0.000183105C33.8484%20-0.000183105%2033.6417%200.124902%2033.5415%200.322507L30.727%205.87345L24.434%206.76364C24.21%206.79529%2024.0239%206.94805%2023.9539%207.15761C23.884%207.36722%2023.9423%207.59728%2024.1044%207.75108L28.658%2012.0719L27.5832%2018.1731C27.5449%2018.3903%2027.6366%2018.6097%2027.8198%2018.7393C27.9234%2018.8125%2028.0461%2018.8498%2028.1694%2018.8498C28.2641%2018.8498%2028.3591%2018.8279%2028.446%2018.7833L34.0748%2015.9027L39.7033%2018.7833C39.9037%2018.8858%2040.1465%2018.8688%2040.3296%2018.7392C40.5128%2018.6097%2040.6045%2018.3902%2040.5663%2018.173L39.4911%2012.0719L44.0452%207.75104C44.2073%207.59728%2044.2657%207.36722%2044.1956%207.15765Z'%20fill='%23FFCA56'/%3e%3cpath%20d='M68.1206%207.15765C68.0506%206.94804%2067.8646%206.79529%2067.6406%206.76364L61.3475%205.87345L58.533%200.322507C58.4329%200.124902%2058.2261%20-0.000183105%2057.9998%20-0.000183105C57.7734%20-0.000183105%2057.5666%200.124902%2057.4665%200.322507L54.6519%205.87345L48.3589%206.76364C48.135%206.79529%2047.9488%206.94805%2047.8789%207.15761C47.8089%207.36722%2047.8673%207.59728%2048.0294%207.75108L52.5829%2012.0719L51.5081%2018.1731C51.4698%2018.3903%2051.5616%2018.6097%2051.7447%2018.7393C51.8483%2018.8125%2051.971%2018.8498%2052.0943%2018.8498C52.189%2018.8498%2052.284%2018.8279%2052.371%2018.7833L57.9997%2015.9027L63.6282%2018.7833C63.8287%2018.8858%2064.0714%2018.8688%2064.2546%2018.7392C64.4377%2018.6097%2064.5295%2018.3902%2064.4912%2018.173L63.4161%2012.0719L67.9701%207.75104C68.1322%207.59728%2068.1906%207.36722%2068.1206%207.15765Z'%20fill='%23FFCA56'/%3e%3cpath%20d='M92.0456%207.15765C91.9757%206.94804%2091.7896%206.79529%2091.5656%206.76364L85.2725%205.87345L82.4581%200.322507C82.3579%200.124902%2082.1512%20-0.000183105%2081.9248%20-0.000183105C81.6984%20-0.000183105%2081.4917%200.124902%2081.3915%200.322507L78.577%205.87345L72.284%206.76364C72.06%206.79529%2071.8739%206.94805%2071.8039%207.15761C71.7339%207.36722%2071.7923%207.59728%2071.9544%207.75108L76.5079%2012.0719L75.4332%2018.1731C75.3949%2018.3903%2075.4866%2018.6097%2075.6697%2018.7393C75.7733%2018.8125%2075.8961%2018.8498%2076.0194%2018.8498C76.114%2018.8498%2076.209%2018.8279%2076.296%2018.7833L81.9248%2015.9027L87.5533%2018.7833C87.7537%2018.8858%2087.9965%2018.8688%2088.1796%2018.7392C88.3627%2018.6097%2088.4545%2018.3902%2088.4163%2018.173L87.3411%2012.0719L91.8952%207.75104C92.0572%207.59728%2092.1156%207.36722%2092.0456%207.15765Z'%20fill='%23FFCA56'/%3e%3cpath%20d='M115.971%207.15765C115.901%206.94804%20115.715%206.79529%20115.491%206.76364L109.197%205.87345L106.383%200.322507C106.283%200.124902%20106.076%20-0.000183105%20105.85%20-0.000183105C105.623%20-0.000183105%20105.417%200.124902%20105.316%200.322507L102.502%205.87345L96.2089%206.76364C95.9849%206.79529%2095.7988%206.94805%2095.7288%207.15761C95.6589%207.36722%2095.7172%207.59728%2095.8793%207.75108L100.433%2012.0719L99.3581%2018.1731C99.3198%2018.3903%2099.4115%2018.6097%2099.5947%2018.7393C99.6983%2018.8125%2099.821%2018.8498%2099.9443%2018.8498C100.039%2018.8498%20100.134%2018.8279%20100.221%2018.7833L105.85%2015.9027L111.478%2018.7833C111.679%2018.8858%20111.921%2018.8688%20112.105%2018.7392C112.288%2018.6097%20112.379%2018.3902%20112.341%2018.173L111.266%2012.0719L115.82%207.75104C115.982%207.59728%20116.041%207.36722%20115.971%207.15765Z'%20fill='%23FFCA56'/%3e%3c/svg%3e" alt="Logo">
+            <p>5 Star Ratings (2k+ Review)</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="companies__bottom">
+        <a href="#">
+          <img loading="lazy" width="200" height="200" src="/besnik-task/assets/me-undies-logo-BWsiZUga.svg" alt="me-undies">
+        </a>
+        <a href="#">
+          <img loading="lazy" width="200" height="200" src="/besnik-task/assets/slack-logo-CHCez5M3.svg" alt="slack">
+        </a>
+        <a href="#">
+          <img loading="lazy" width="200" height="200" class="companies__amazon"
+            src="/besnik-task/assets/amazon-logo-D4O2B2LI.svg" alt="amazon">
+        </a>
+        <a href="#">
+          <img loading="lazy" width="200" height="200" src="/besnik-task/assets/woocommerce-logo-D7yFpEtb.svg"
+            alt="woo-commerce">
+        </a>
+        <a href="#">
+          <img loading="lazy" width="200" height="200" src="/besnik-task/assets/sitepoint-logo-BKAgiIjc.svg" alt="sitepoint">
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- INFO -->
+  <section class="info">
+    <div class="wrapper">
+      <div class="b-text">
+        <h2 class="b-text__title">How its works ?</h2>
+        <p class="b-text__desc">Everything you need to know when you're looking to buy, rent, or sell - all in one
+          place.</p>
+      </div>
+
+      <article class="info__guides">
+        <div class="guide">
+          <img loading="lazy" class="guide__img" width="100" height="100" src="/besnik-task/assets/cart-icon-DCXi-fxn.svg"
+            alt="buyer">
+
+          <p class="guide__title">Buyer Guides</p>
+
+          <a href="#" class="b-arrow">
+            How to buy
+            <span></span>
+          </a>
+        </div>
+        <div class="guide">
+          <img loading="lazy" class="guide__img" width="100" height="100" src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M39.5532%2017.7604L24.0003%204.86811L8.44751%2017.7604V24.5453H4.69965V20.867L2.39176%2022.7805L0%2019.8951L24.0003%200L48.0007%2019.8951L45.6089%2022.7805L43.301%2020.867V24.5453H39.5532V17.7604ZM13.6943%2047.9685H22.2202V44.2206H17.4418V38.9738H22.2202V35.2263H17.4418V31.4785H22.2202V27.731H13.6943V47.9685ZM38.0543%2031.4785H41.1462V47.9685H44.8937V31.4785H47.9857V27.731H38.0543V31.4785ZM8.06664%2038.4212L11.3216%2047.9685H7.36204L4.29572%2038.9742H3.76287V47.9685H0.0150148V27.731H5.6368C8.73645%2027.731%2011.2582%2030.2528%2011.2582%2033.3524C11.2582%2035.5823%209.95302%2037.513%208.06664%2038.4212ZM3.76287%2035.2263H5.6368C6.6699%2035.2263%207.51036%2034.3855%207.51036%2033.3524C7.51036%2032.3193%206.6699%2031.4785%205.6368%2031.4785H3.76287V35.2263ZM31.9641%2037.1797L28.5726%2027.8409L28.4975%2027.868V27.731H24.75V47.9685H28.4975V38.6131L31.8894%2047.9523L31.9641%2047.9252V47.9685H35.7119V27.731H31.9641V37.1797Z'%20fill='%233B3C45'/%3e%3cmask%20id='mask0_2_553'%20style='mask-type:alpha'%20maskUnits='userSpaceOnUse'%20x='0'%20y='0'%20width='49'%20height='48'%3e%3cpath%20d='M39.5532%2017.7604L24.0003%204.86811L8.44751%2017.7604V24.5453H4.69965V20.867L2.39176%2022.7805L0%2019.8951L24.0003%200L48.0007%2019.8951L45.6089%2022.7805L43.301%2020.867V24.5453H39.5532V17.7604ZM13.6943%2047.9685H22.2202V44.2206H17.4418V38.9738H22.2202V35.2263H17.4418V31.4785H22.2202V27.731H13.6943V47.9685ZM38.0543%2031.4785H41.1462V47.9685H44.8937V31.4785H47.9857V27.731H38.0543V31.4785ZM8.06664%2038.4212L11.3216%2047.9685H7.36204L4.29572%2038.9742H3.76287V47.9685H0.0150148V27.731H5.6368C8.73645%2027.731%2011.2582%2030.2528%2011.2582%2033.3524C11.2582%2035.5823%209.95302%2037.513%208.06664%2038.4212ZM3.76287%2035.2263H5.6368C6.6699%2035.2263%207.51036%2034.3855%207.51036%2033.3524C7.51036%2032.3193%206.6699%2031.4785%205.6368%2031.4785H3.76287V35.2263ZM31.9641%2037.1797L28.5726%2027.8409L28.4975%2027.868V27.731H24.75V47.9685H28.4975V38.6131L31.8894%2047.9523L31.9641%2047.9252V47.9685H35.7119V27.731H31.9641V37.1797Z'%20fill='%233B3C45'/%3e%3c/mask%3e%3cg%20mask='url(%23mask0_2_553)'%3e%3crect%20x='-3.6004'%20y='25.1998'%20width='54.0008'%20height='25.2004'%20fill='%23F7A804'/%3e%3c/g%3e%3c/svg%3e"
+            alt="buyer">
+
+          <p class="guide__title">Renter Guides</p>
+
+          <a href="#" class="b-arrow">
+            How to rent
+            <span></span>
+          </a>
+        </div>
+
+        <div class="guide">
+          <img loading="lazy" class="guide__img" width="100" height="100" src="data:image/svg+xml,%3csvg%20width='48'%20height='49'%20viewBox='0%200%2048%2049'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M35%2023C27.832%2023%2022%2028.832%2022%2036C22%2043.168%2027.832%2049%2035%2049C42.168%2049%2048%2043.168%2048%2036C48%2028.832%2042.168%2023%2035%2023ZM34.75%2034.5H35.25C37.318%2034.5%2039%2036.182%2039%2038.25C39%2039.876%2037.952%2041.252%2036.5%2041.77V42.5C36.5%2043.328%2035.828%2044%2035%2044C34.172%2044%2033.5%2043.328%2033.5%2042.5V42H32.5C31.672%2042%2031%2041.328%2031%2040.5C31%2039.672%2031.672%2039%2032.5%2039H35.25C35.664%2039%2036%2038.664%2036%2038.25C36%2037.836%2035.664%2037.5%2035.25%2037.5H34.75C32.682%2037.5%2031%2035.818%2031%2033.75C31%2032.124%2032.048%2030.748%2033.5%2030.23V29.5C33.5%2028.672%2034.172%2028%2035%2028C35.828%2028%2036.5%2028.672%2036.5%2029.5V30H37.5C38.328%2030%2039%2030.672%2039%2031.5C39%2032.328%2038.328%2033%2037.5%2033H34.75C34.336%2033%2034%2033.336%2034%2033.75C34%2034.164%2034.336%2034.5%2034.75%2034.5Z'%20fill='%23F7A804'/%3e%3cpath%20d='M34%2012.916V5.00004C34%203.89404%2033.104%203.00004%2032%203.00004C30.896%203.00004%2030%203.89404%2030%205.00004V9.00404L22.398%201.57004C21.62%200.808035%2020.378%200.808035%2019.602%201.57004L0.878%2019.874C0.32%2020.438%200%2021.212%200%2022C0%2023.654%201.346%2025%203%2025H6V36C6%2038.758%208.244%2041%2011%2041H16C17.104%2041%2018%2040.106%2018%2039C18%2037.894%2017.104%2037%2016%2037H11C10.448%2037%2010%2036.55%2010%2036V23C10%2021.894%209.104%2021%208%2021H5.446L21%205.79604L34.102%2018.608C34.894%2019.382%2036.158%2019.368%2036.93%2018.576C37.702%2017.786%2037.688%2016.52%2036.898%2015.748L34%2012.916Z'%20fill='%233B3C45'/%3e%3c/svg%3e"
+            alt="buyer">
+
+          <p class="guide__title">Seller Guides</p>
+
+          <a href="#" class="b-arrow">
+            How to sell
+            <span></span>
+          </a>
+        </div>
+      </article>
+
+      <a href="#" class="b-btn b-btn--bigger">Sell Full Guidelines</a>
+    </div>
+  </section>
+
+  <!-- PROPERTIES-->
+  <section class="properties">
+    <div class="wrapper">
+      <div class="properties__head">
+        <div class="b-text">
+          <h2 class="b-text__title">Featured Properties</h2>
+          <p class="b-text__desc">Everything you need to know when you're looking</p>
+        </div>
+
+        <a href="#" class="b-arrow b-arrow--bigger">
+          View All Properties
+          <span></span>
+        </a>
+      </div>
+
+      <div class="properties__cards">
+        <a href="#" class="card">
+          <figure>
+            <img loading="lazy" width="200" height="200" src="/besnik-task/assets/property-1-BjF0idPn.jpg" alt="card-img">
+          </figure>
+          <div class="card__wrap">
+            <p class="card__price">$35000</p>
+            <p class="card__address">8502 Preston Rd. Inglewood, Maine 98280</p>
+            <div class="card__room">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.6817 6.11577H2.73025C2.44333 6.11577 2.21074 6.34836 2.21074 6.63528V13.1115C2.21074 13.3984 2.44333 13.631 2.73025 13.631H18.6817C18.9686 13.631 19.2012 13.3984 19.2012 13.1115V6.63528C19.2012 6.34836 18.9686 6.11577 18.6817 6.11577ZM2.73025 4.31519C1.4489 4.31519 0.410156 5.35393 0.410156 6.63528V13.1115C0.410156 14.3928 1.4489 15.4316 2.73025 15.4316H18.6817C19.963 15.4316 21.0017 14.3928 21.0017 13.1115V6.63528C21.0017 5.35393 19.963 4.31519 18.6817 4.31519H2.73025Z"
+                    fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5062 1.80058H5.90698C5.62006 1.80058 5.38747 2.03318 5.38747 2.3201V4.33321H16.0257V2.3201C16.0257 2.03318 15.7931 1.80058 15.5062 1.80058ZM5.90698 0C4.62563 0 3.58688 1.03874 3.58688 2.3201V6.13379H17.8263V2.3201C17.8263 1.03874 16.7875 0 15.5062 0H5.90698Z"
+                    fill="currentColor" />
+                </svg>
+                5 Beds
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.57898 8.21582L3.38907 14.7319C3.42488 15.02 3.66972 15.2363 3.96003 15.2363H18.6509C18.9384 15.2363 19.1817 15.0241 19.2209 14.7394L20.1187 8.21582H2.57898ZM2.27635 6.37354C1.32944 6.37354 0.596612 7.20312 0.713433 8.14279L1.56086 14.9592C1.71136 16.1698 2.74014 17.0786 3.96003 17.0786H18.6509C19.8588 17.0786 20.8813 16.1871 21.046 14.9905L21.9856 8.16321C22.1158 7.21695 21.3805 6.37354 20.4253 6.37354H2.27635Z"
+                    fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.4636 2.35155C9.77802 2.73478 9.4873 3.20201 9.44971 3.54734L9.32711 4.6737L8.24949 4.32378C7.29285 4.01315 6.67799 4.03055 6.291 4.14691C5.92507 4.25695 5.66406 4.48466 5.46061 4.82558C5.00759 5.58476 4.92786 6.75045 4.92786 7.69597L3.08557 7.69597C3.08557 6.77887 3.13515 5.12737 3.87859 3.88153C4.27338 3.21995 4.8774 2.6482 5.76051 2.38266C6.39802 2.19096 7.12093 2.17697 7.93059 2.33734C8.28448 1.66381 8.88858 1.12138 9.56472 0.743439C10.5737 0.179432 11.8758 -0.105262 13.2351 0.03571C16.0318 0.325772 18.9285 2.384 20.257 7.14624L18.4825 7.64129C17.3207 3.47687 14.9622 2.06701 13.045 1.86817C12.0473 1.76469 11.1277 1.98034 10.4636 2.35155Z"
+                    fill="currentColor" />
+                </svg>
+                2 both
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path
+                    d="M6.09503 0H2.28635C1.02363 0 0 1.02363 0 2.28635V6.57681H1.80741V2.28635C1.80741 2.02184 2.02184 1.80741 2.28635 1.80741H6.09503V0Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.6997 1.80741V0H15.7137C16.9764 0 18 1.02363 18 2.28635V6.57681H16.1926V2.28635C16.1926 2.02184 15.9782 1.80741 15.7137 1.80741H11.6997Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.6997 16.1926H15.7137C15.9782 16.1926 16.1926 15.9782 16.1926 15.7137V12.1815H18V15.7137C18 16.9764 16.9764 18 15.7137 18H11.6997V16.1926Z"
+                    fill="currentColor" />
+                  <path
+                    d="M1.80741 12.1815V15.7137C1.80741 15.9782 2.02184 16.1926 2.28635 16.1926H6.09503V18H2.28635C1.02363 18 0 16.9764 0 15.7137V12.1815H1.80741Z"
+                    fill="currentColor" />
+                </svg>
+                2000 Sqft
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+          <figure>
+            <img loading="lazy" width="200" height="200" src="/besnik-task/assets/property-2-BuV1a8NO.jpg" alt="card-img">
+          </figure>
+          <div class="card__wrap">
+            <p class="card__price">$35000</p>
+            <p class="card__address">8502 Preston Rd. Inglewood, Maine 98280</p>
+            <div class="card__room">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.6817 6.11577H2.73025C2.44333 6.11577 2.21074 6.34836 2.21074 6.63528V13.1115C2.21074 13.3984 2.44333 13.631 2.73025 13.631H18.6817C18.9686 13.631 19.2012 13.3984 19.2012 13.1115V6.63528C19.2012 6.34836 18.9686 6.11577 18.6817 6.11577ZM2.73025 4.31519C1.4489 4.31519 0.410156 5.35393 0.410156 6.63528V13.1115C0.410156 14.3928 1.4489 15.4316 2.73025 15.4316H18.6817C19.963 15.4316 21.0017 14.3928 21.0017 13.1115V6.63528C21.0017 5.35393 19.963 4.31519 18.6817 4.31519H2.73025Z"
+                    fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5062 1.80058H5.90698C5.62006 1.80058 5.38747 2.03318 5.38747 2.3201V4.33321H16.0257V2.3201C16.0257 2.03318 15.7931 1.80058 15.5062 1.80058ZM5.90698 0C4.62563 0 3.58688 1.03874 3.58688 2.3201V6.13379H17.8263V2.3201C17.8263 1.03874 16.7875 0 15.5062 0H5.90698Z"
+                    fill="currentColor" />
+                </svg>
+                5 Beds
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.57898 8.21582L3.38907 14.7319C3.42488 15.02 3.66972 15.2363 3.96003 15.2363H18.6509C18.9384 15.2363 19.1817 15.0241 19.2209 14.7394L20.1187 8.21582H2.57898ZM2.27635 6.37354C1.32944 6.37354 0.596612 7.20312 0.713433 8.14279L1.56086 14.9592C1.71136 16.1698 2.74014 17.0786 3.96003 17.0786H18.6509C19.8588 17.0786 20.8813 16.1871 21.046 14.9905L21.9856 8.16321C22.1158 7.21695 21.3805 6.37354 20.4253 6.37354H2.27635Z"
+                    fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.4636 2.35155C9.77802 2.73478 9.4873 3.20201 9.44971 3.54734L9.32711 4.6737L8.24949 4.32378C7.29285 4.01315 6.67799 4.03055 6.291 4.14691C5.92507 4.25695 5.66406 4.48466 5.46061 4.82558C5.00759 5.58476 4.92786 6.75045 4.92786 7.69597L3.08557 7.69597C3.08557 6.77887 3.13515 5.12737 3.87859 3.88153C4.27338 3.21995 4.8774 2.6482 5.76051 2.38266C6.39802 2.19096 7.12093 2.17697 7.93059 2.33734C8.28448 1.66381 8.88858 1.12138 9.56472 0.743439C10.5737 0.179432 11.8758 -0.105262 13.2351 0.03571C16.0318 0.325772 18.9285 2.384 20.257 7.14624L18.4825 7.64129C17.3207 3.47687 14.9622 2.06701 13.045 1.86817C12.0473 1.76469 11.1277 1.98034 10.4636 2.35155Z"
+                    fill="currentColor" />
+                </svg>
+                2 both
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path
+                    d="M6.09503 0H2.28635C1.02363 0 0 1.02363 0 2.28635V6.57681H1.80741V2.28635C1.80741 2.02184 2.02184 1.80741 2.28635 1.80741H6.09503V0Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.6997 1.80741V0H15.7137C16.9764 0 18 1.02363 18 2.28635V6.57681H16.1926V2.28635C16.1926 2.02184 15.9782 1.80741 15.7137 1.80741H11.6997Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.6997 16.1926H15.7137C15.9782 16.1926 16.1926 15.9782 16.1926 15.7137V12.1815H18V15.7137C18 16.9764 16.9764 18 15.7137 18H11.6997V16.1926Z"
+                    fill="currentColor" />
+                  <path
+                    d="M1.80741 12.1815V15.7137C1.80741 15.9782 2.02184 16.1926 2.28635 16.1926H6.09503V18H2.28635C1.02363 18 0 16.9764 0 15.7137V12.1815H1.80741Z"
+                    fill="currentColor" />
+                </svg>
+                2000 Sqft
+              </div>
+            </div>
+          </div>
+        </a>
+        <a href="#" class="card">
+          <figure>
+            <img loading="lazy" width="200" height="200" src="/besnik-task/assets/property-3-qu1aQqga.jpg" alt="card-img">
+          </figure>
+          <div class="card__wrap">
+            <p class="card__price">$35000</p>
+            <p class="card__address">8502 Preston Rd. Inglewood, Maine 98280</p>
+            <div class="card__room">
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="16" viewBox="0 0 22 16" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M18.6817 6.11577H2.73025C2.44333 6.11577 2.21074 6.34836 2.21074 6.63528V13.1115C2.21074 13.3984 2.44333 13.631 2.73025 13.631H18.6817C18.9686 13.631 19.2012 13.3984 19.2012 13.1115V6.63528C19.2012 6.34836 18.9686 6.11577 18.6817 6.11577ZM2.73025 4.31519C1.4489 4.31519 0.410156 5.35393 0.410156 6.63528V13.1115C0.410156 14.3928 1.4489 15.4316 2.73025 15.4316H18.6817C19.963 15.4316 21.0017 14.3928 21.0017 13.1115V6.63528C21.0017 5.35393 19.963 4.31519 18.6817 4.31519H2.73025Z"
+                    fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M15.5062 1.80058H5.90698C5.62006 1.80058 5.38747 2.03318 5.38747 2.3201V4.33321H16.0257V2.3201C16.0257 2.03318 15.7931 1.80058 15.5062 1.80058ZM5.90698 0C4.62563 0 3.58688 1.03874 3.58688 2.3201V6.13379H17.8263V2.3201C17.8263 1.03874 16.7875 0 15.5062 0H5.90698Z"
+                    fill="currentColor" />
+                </svg>
+                5 Beds
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="18" viewBox="0 0 22 18" fill="none">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M2.57898 8.21582L3.38907 14.7319C3.42488 15.02 3.66972 15.2363 3.96003 15.2363H18.6509C18.9384 15.2363 19.1817 15.0241 19.2209 14.7394L20.1187 8.21582H2.57898ZM2.27635 6.37354C1.32944 6.37354 0.596612 7.20312 0.713433 8.14279L1.56086 14.9592C1.71136 16.1698 2.74014 17.0786 3.96003 17.0786H18.6509C19.8588 17.0786 20.8813 16.1871 21.046 14.9905L21.9856 8.16321C22.1158 7.21695 21.3805 6.37354 20.4253 6.37354H2.27635Z"
+                    fill="currentColor" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M10.4636 2.35155C9.77802 2.73478 9.4873 3.20201 9.44971 3.54734L9.32711 4.6737L8.24949 4.32378C7.29285 4.01315 6.67799 4.03055 6.291 4.14691C5.92507 4.25695 5.66406 4.48466 5.46061 4.82558C5.00759 5.58476 4.92786 6.75045 4.92786 7.69597L3.08557 7.69597C3.08557 6.77887 3.13515 5.12737 3.87859 3.88153C4.27338 3.21995 4.8774 2.6482 5.76051 2.38266C6.39802 2.19096 7.12093 2.17697 7.93059 2.33734C8.28448 1.66381 8.88858 1.12138 9.56472 0.743439C10.5737 0.179432 11.8758 -0.105262 13.2351 0.03571C16.0318 0.325772 18.9285 2.384 20.257 7.14624L18.4825 7.64129C17.3207 3.47687 14.9622 2.06701 13.045 1.86817C12.0473 1.76469 11.1277 1.98034 10.4636 2.35155Z"
+                    fill="currentColor" />
+                </svg>
+                2 both
+              </div>
+              <div>
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+                  <path
+                    d="M6.09503 0H2.28635C1.02363 0 0 1.02363 0 2.28635V6.57681H1.80741V2.28635C1.80741 2.02184 2.02184 1.80741 2.28635 1.80741H6.09503V0Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.6997 1.80741V0H15.7137C16.9764 0 18 1.02363 18 2.28635V6.57681H16.1926V2.28635C16.1926 2.02184 15.9782 1.80741 15.7137 1.80741H11.6997Z"
+                    fill="currentColor" />
+                  <path
+                    d="M11.6997 16.1926H15.7137C15.9782 16.1926 16.1926 15.9782 16.1926 15.7137V12.1815H18V15.7137C18 16.9764 16.9764 18 15.7137 18H11.6997V16.1926Z"
+                    fill="currentColor" />
+                  <path
+                    d="M1.80741 12.1815V15.7137C1.80741 15.9782 2.02184 16.1926 2.28635 16.1926H6.09503V18H2.28635C1.02363 18 0 16.9764 0 15.7137V12.1815H1.80741Z"
+                    fill="currentColor" />
+                </svg>
+                2000 Sqft
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- HOMES-->
+  <section class="homes">
+    <div class="wrapper">
+      <div class="homes__promo">
+        <div class="homes__img">
+          <div class="homes__offer">
+            <span class="homes__num">40,000 <small>+</small>
+
+              <svg xmlns="http://www.w3.org/2000/svg" width="28" height="19" viewBox="0 0 28 19" fill="none">
+                <path d="M1 17.0342L10.681 7.35316L15.219 11.8911L26.1101 1M26.1101 1V7.6557M26.1101 1H19.4544"
+                  stroke="#50D28A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </span>
+            <p class="homes__desc">By avarage for 2 bedroom apments in San Francisco, CA</p>
+
+            <img loading="lazy" width="200" height="200" class="homes__users" src="/besnik-task/assets/users-cut-BpClHYgx.png"
+              alt="users">
+          </div>
+
+          <figure>
+            <img loading="lazy" width="200" height="200" src="/besnik-task/assets/house-BUBpygOR.jpg" alt="House">
+          </figure>
+        </div>
+
+        <div class="b-text">
+          <h2 class="b-text__title">You’ve found a neighborhood you love.</h2>
+          <p class="b-text__desc">
+            When you own a home, you’re committing to living in one location for a while. In a recent Trulia survey, we
+            found that five out of six respondents said finding the right neighborhood
+          </p>
+        </div>
+      </div>
+
+      <article class="sale">
+        <div class="sale__item">
+          <h3 class="sale__title">2,500</h3>
+          <p class="sale__desc">Homes For Sale</p>
+        </div>
+        <div class="sale__item">
+          <h3 class="sale__title">5,000+</h3>
+          <p class="sale__desc">Homes Recently Sold</p>
+        </div>
+        <div class="sale__item">
+          <h3 class="sale__title">170+</h3>
+          <p class="sale__desc">Price Reduced</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FEATURES-->
+  <section class="wrapper">
+    <div class="featured">
+      <div class="b-text">
+        <h2 class="b-text__title">Featured Properties</h2>
+        <p class="b-text__desc">Everything you need to know when you're looking</p>
+        <a href="#" class="b-btn" aria-label="more">Get Started Now</a>
+      </div>
+
+      <figure class="featured__img">
+        <img loading="lazy" width="200" height="300" src="/besnik-task/assets/home-illustration-CCtTIIn5.png" alt="home">
+      </figure>
+    </div>
+  </section>
+
+  <!-- FOOTER-->
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer__top">
+        <ul class="footer__list">
+          <li>
+            <p class="footer__title">Product</p>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Listing</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Property</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Agents</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Blog</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li>
+            <p class="footer__title">Resources</p>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Our Homes</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Member Stories</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Video</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Free trial</a>
+          </li>
+        </ul>
+        <ul class="footer__list">
+          <li>
+            <p class="footer__title">Company</p>
+          </li>
+          <li>
+            <a class="footer__link" href="#">Patnerships</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Terms of use</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Privacy</a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">Sitemap</a>
+          </li>
+        </ul>
+        <div class="footer__list footer__contact">
+          <p class="footer__title">Get in touch</p>
+          <p class="footer__desc">You’ll find your next home, in any style you prefer.</p>
+          <div class="footer__socials">
+            <a href="#" aria-label="Visit Our Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                <path
+                  d="M24.9118 0H3.55882C1.59613 0 0 1.59613 0 3.55882V24.9118C0 26.8745 1.59613 28.4706 3.55882 28.4706H24.9118C26.8745 28.4706 28.4706 26.8745 28.4706 24.9118V3.55882C28.4706 1.59613 26.8745 0 24.9118 0Z"
+                  fill="#F9F9F9" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M18 12.6154H15.6667V10.7692C15.6667 10.2597 16.0848 10.3077 16.6 10.3077H17.5333V8H15.6667C14.9241 8 14.2119 8.29176 13.6868 8.81109C13.1617 9.33042 12.8667 10.0348 12.8667 10.7692V12.6154H11V14.9231H12.8667V20H15.6667V14.9231H17.0667L18 12.6154Z"
+                  fill="#646464" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Visit Our Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                <path
+                  d="M28.4688 24.5163C28.4688 25.5651 28.059 26.5709 27.3297 27.3124C26.6004 28.054 25.6113 28.4706 24.5799 28.4706H4.35764C3.32624 28.4706 2.33709 28.054 1.60778 27.3124C0.878471 26.5709 0.46875 25.5651 0.46875 24.5163V3.95425C0.46875 2.90552 0.878471 1.89974 1.60778 1.15817C2.33709 0.416607 3.32624 0 4.35764 0H24.5799C25.6113 0 26.6004 0.416607 27.3297 1.15817C28.059 1.89974 28.4688 2.90552 28.4688 3.95425V24.5163Z"
+                  fill="#F9F9F9" />
+                <path
+                  d="M19.8769 11.0042C19.4793 11.1894 18.9758 11.3633 18.5246 11.4211C18.9835 11.1349 19.7115 10.5391 19.8769 10C19.4482 10.2648 18.6729 10.5476 18.1672 10.6499C17.7633 10.1999 17.1872 10 16.549 10C15.3229 10 14.4678 11.0918 14.4678 12.3684V13.3158C12.6648 13.3158 10.9068 11.8725 9.81283 10.4737C9.61502 10.8262 9.51117 11.2283 9.51218 11.6375C9.51218 12.4992 10.2654 13.3736 10.8617 13.7895C10.498 13.7776 9.80923 13.4858 9.50947 13.3158V13.3428C9.50947 14.464 10.2582 15.2252 11.2728 15.4374C11.0876 15.4909 10.8617 15.6842 9.99269 15.6842C10.2749 16.6008 11.6934 17.0854 12.6648 17.1053C11.9048 17.7244 10.5498 18.0526 9.50947 18.0526C9.32962 18.0526 9.23226 18.0631 9.05872 18.0417C10.0405 18.6954 11.4117 19 12.6648 19C16.7473 19 18.9754 15.7231 18.9754 12.6668C18.9754 12.5664 18.9722 12.2301 18.9673 12.1316C19.4036 11.8085 19.5803 11.4703 19.8769 11.0042Z"
+                  fill="#646464" />
+              </svg>
+            </a>
+            <a href="#" aria-label="Visit Our Linkedin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="29" height="29" viewBox="0 0 29 29" fill="none">
+                <path
+                  d="M22.6097 0H6.91977C3.39048 0 0.529419 2.86106 0.529419 6.39035V22.0802C0.529419 25.6095 3.39048 28.4706 6.91977 28.4706H22.6097C26.139 28.4706 29 25.6095 29 22.0802V6.39035C29 2.86106 26.139 0 22.6097 0Z"
+                  fill="#F9F9F9" />
+                <path d="M11.4397 12.3151H9.16157V18.9866H11.4397V12.3151Z" fill="#646464" />
+                <path
+                  d="M11.0567 9.20164C10.8396 9.07017 10.5844 9 10.3234 9C10.1493 9 9.97681 9.03124 9.816 9.09194C9.6552 9.15264 9.5092 9.24159 9.38641 9.35367C9.26361 9.46576 9.16644 9.59878 9.10049 9.74507C9.03453 9.89136 9.0011 10.048 9.0021 10.2061C9.0036 10.443 9.08236 10.6742 9.22846 10.8705C9.37456 11.0668 9.58144 11.2194 9.823 11.3091C10.0646 11.3988 10.33 11.4216 10.5858 11.3745C10.8416 11.3275 11.0763 11.2127 11.2604 11.0448C11.4444 10.8768 11.5695 10.6631 11.6199 10.4306C11.6702 10.1982 11.6436 9.95744 11.5434 9.73872C11.4432 9.51999 11.2738 9.3331 11.0567 9.20164Z"
+                  fill="#646464" />
+                <path
+                  d="M15.0965 12.3147H12.9019L12.8943 19H15.1725V15.6987C15.1725 14.8303 15.3547 13.9895 16.5393 13.9895C17.7239 13.9895 17.724 14.9888 17.724 15.7607V18.9862H20.0021V15.3265C20.0021 13.5277 19.5389 12.1493 17.2607 12.1493C16.8265 12.1339 16.3959 12.2258 16.0147 12.4151C15.6336 12.6045 15.3162 12.8842 15.0965 13.2245V12.3147Z"
+                  fill="#646464" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <a href="#" class="footer__logo" aria-label="logo">
+          <img loading="lazy" width="40" height="20" src="data:image/png;base64,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" alt="Logo">
+        </a>
+
+        <span class="footer__copyright">Copyright 2020.com, All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>

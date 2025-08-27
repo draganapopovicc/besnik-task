@@ -1,0 +1,202 @@
+@use "sass:color";
+@use "../shared" as *;
+
+.header {
+   padding: 20px 0;
+   position: relative;
+
+   @media (min-width: $media-desktop-break) {
+      padding: 38px 0 0;
+   }
+
+   .wrapper {
+      display: flex;
+      align-items: center;
+      gap: 66px;
+   }
+
+   &__logo {
+      flex: 0 0 106px;
+   }
+
+   &__buttons {
+      display: none;
+
+      @media (min-width: $media-tablet-break) {
+         margin-left: auto;
+         display: flex;
+      }
+   }
+
+   &__menu {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      margin-left: auto;
+      cursor: pointer;
+
+      @media (min-width: $media-tablet-break) {
+         margin-left: unset;
+      }
+
+      @media (min-width: $media-desktop-break) {
+         display: none;
+      }
+
+      &.opened {
+         span {
+            background: transparent;
+
+            &::before {
+               transform: rotate(45deg) translate(0, 0px);
+               height: 3px;
+            }
+
+            &::after {
+               transform: rotate(-45deg) translate(0, 0);
+               height: 3px;
+            }
+         }
+      }
+
+      span {
+         width: 27px;
+         height: 3px;
+         background-color: $btn-bg-dark;
+         display: inline-block;
+         position: relative;
+         transition: width 0.3s;
+
+         &::before,
+         &::after {
+            content: "";
+            width: 27px;
+            height: 3px;
+            background-color: $btn-bg-dark;
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transition: background-color 0.5s, transform 0.5s;
+            transform: rotate(0) translate(0, 7.5px);
+         }
+
+         &::after {
+            left: 0;
+            top: 0;
+            transition: background-color 0.5s, transform 0.5s;
+            transform: rotate(0) translate(0, -7.5px);
+         }
+      }
+   }
+}
+
+.nav {
+   //mobile starts
+   @media (max-width: $media-desktop-break) {
+      max-height: 0;
+      height: 0;
+      visibility: hidden;
+      position: absolute;
+      top: 100%;
+      background: $header-hero-bg;
+      left: 0;
+      right: 0;
+      padding: 0 20px;
+      transition: max-height 0.4s ease-out, opacity 0.9s ease-out, visibility 0.4s ease-out, height 0.4s ease-out;
+
+      > ul {
+         opacity: 0;
+         border-top: 2px solid color.adjust($btn-bg-dark, $lightness: 10%);
+         padding-top: 20px;
+
+         &::-webkit-scrollbar {
+            display: none;
+         }
+         -ms-overflow-style: none;
+         scrollbar-width: none;
+
+         > li {
+            a {
+               font-weight: 700;
+               font-size: 20px;
+               padding: 15px 0;
+               display: inline-block;
+
+               &::after {
+                  bottom: 5px;
+               }
+            }
+         }
+      }
+
+      &.opened {
+         max-height: 1000px;
+         visibility: visible;
+         z-index: 10;
+         height: calc(100vh - 70px);
+         padding: 0 20px;
+
+         > ul,
+         .header__buttons {
+            opacity: 1;
+            transition: opacity 0.4s ease-out;
+         }
+      }
+
+      .b-btn--header {
+         font-size: 17px;
+      }
+   }
+   //mobile ends
+
+   //desktop starts
+   @media (min-width: $media-desktop-break) {
+      &__list {
+         display: flex;
+         gap: 30px;
+      }
+
+      &__link {
+         font-size: 14px;
+         font-weight: 500;
+         line-height: 21px;
+         color: $gray-text-color;
+      }
+   }
+   //desktop ends
+
+   &__link {
+      position: relative;
+
+      &:after {
+         content: "";
+         background: none repeat scroll 0 0 $gray-text-color;
+         display: block;
+         height: 2px;
+         left: 0;
+         position: absolute;
+         transition: width 0.4s ease;
+         width: 0;
+         bottom: -5px;
+      }
+
+      &:hover:after {
+         width: 100%;
+      }
+   }
+
+   .header__buttons {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: 50px;
+      opacity: 0;
+
+      @media (min-width: $media-tablet-break) {
+         display: none;
+      }
+   }
+}

@@ -1,0 +1,36 @@
+@use "../shared" as *;
+
+html {
+   scroll-behavior: smooth;
+}
+
+* {
+   box-sizing: border-box;
+}
+
+body,
+button {
+   font-family: $font-family-primary;
+}
+
+.wrapper {
+   min-width: 300px;
+   margin: 0 auto;
+   padding: 0 20px;
+   max-width: 1149px;
+}
+
+.header-hero-wrap {
+   background: $header-hero-bg;
+}
+
+a {
+   display: block;
+   color: inherit;
+   text-decoration: none;
+}
+
+img {
+   width: 100%;
+   height: auto;
+}

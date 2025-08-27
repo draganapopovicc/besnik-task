@@ -1,0 +1,30 @@
+// @use "../../shared" as *;
+@use "../../basic/variables" as *;
+
+@mixin title($color: $title-text-color, $fontSize: 35px, $lineHeight: 35px, $marginBottom: 16px, $fontWeight: 600) {
+   font-weight: $fontWeight;
+   font-size: $fontSize;
+   line-height: $lineHeight;
+   color: $color;
+   margin-bottom: $marginBottom;
+   position: relative;
+}
+
+@mixin description($color: $gray-text-color, $fontSize: 16px, $lineHeight: 30px) {
+   font-size: $fontSize;
+   line-height: $lineHeight;
+   color: $color;
+}
+
+@mixin border-top($left: 0, $top: -14px) {
+   &:after {
+      content: "";
+      position: absolute;
+      top: $top;
+      width: 41px;
+      height: 4px;
+      left: $left;
+      transform: translate(-$left, 0);
+      background: $title-text-color;
+   }
+}

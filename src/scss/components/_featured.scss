@@ -1,0 +1,60 @@
+@use "../shared" as *;
+
+.featured {
+   background: $featured-bg-color;
+   border-radius: 20px;
+   position: relative;
+   text-align: center;
+
+   @media (min-width: $media-tablet-break) {
+      display: flex;
+      text-align: left;
+   }
+
+   &__img {
+      position: relative;
+
+      img {
+         width: 180px;
+
+         @media (min-width: $media-tablet-break) {
+            position: absolute;
+            bottom: 0;
+            height: unset;
+            left: 0;
+         }
+
+         @media (min-width: $media-desktop-break) {
+            width: 229px;
+         }
+      }
+   }
+
+   .b-text {
+      padding: 60px 20px 30px;
+
+      @media (min-width: $media-tablet-break) {
+         padding: 65px 0 65px 35px;
+         flex: 0 0 60%;
+      }
+
+      @media (min-width: $media-desktop-break) {
+         padding: 110px 0 110px 79px;
+      }
+
+      &__title {
+         @include title($light-text-color);
+      }
+
+      &__desc {
+         @include description($light-text-color);
+         opacity: 75%;
+      }
+
+      .b-btn {
+         padding: 18px 23px;
+         margin-top: 20px;
+         display: inline-block;
+      }
+   }
+}

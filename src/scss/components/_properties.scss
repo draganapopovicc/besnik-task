@@ -1,0 +1,104 @@
+@use "../shared" as *;
+
+.properties {
+   background: $section-bg-color;
+   padding: 70px 0;
+
+   @media (min-width: $media-tablet-break) {
+      padding: 109px 0;
+   }
+
+   &__head {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      @media (min-width: $media-tablet-break) {
+         flex-direction: row;
+         align-items: flex-end;
+         justify-content: space-between;
+      }
+   }
+
+   .b-text {
+      &__title {
+         @include title;
+      }
+
+      &__desc {
+         @include description;
+      }
+   }
+
+   &__cards {
+      margin-top: 69px;
+      display: flex;
+      gap: 30px;
+      flex-direction: column;
+
+      @media (min-width: $media-tablet-break) {
+         flex-direction: row;
+         gap: 10px;
+      }
+
+      @media (min-width: $media-desktop-break) {
+         gap: 30px;
+      }
+
+      .card {
+         background: $light-text-color;
+         border-radius: 12px 12px 0 0;
+
+         &:hover {
+            img {
+               transform: perspective(1px) scale(1.09);
+            }
+         }
+
+         figure {
+            overflow: hidden;
+            border-radius: 12px 12px 0 0;
+
+            img {
+               transition: transform 0.3s;
+            }
+         }
+
+         &__wrap {
+            padding: 20px;
+         }
+
+         &__price {
+            @include title($fontSize: 20px, $lineHeight: 20px, $marginBottom: 9px);
+         }
+
+         &__address {
+            font-size: 14px;
+            line-height: 21px;
+            font-weight: 500;
+            margin-bottom: 19px;
+            color: $gray-text-color;
+            opacity: 0.5;
+         }
+
+         &__room {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px 23px;
+            div {
+               display: flex;
+               align-items: center;
+               font-size: 14px;
+               line-height: 14px;
+               font-weight: 500;
+               gap: 7px;
+               color: $gray-text-color;
+
+               svg {
+                  color: $btn-arrow-text-color;
+               }
+            }
+         }
+      }
+   }
+}
